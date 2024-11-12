@@ -1,0 +1,16 @@
+[
+    {
+        "name": "North America",
+        "vertices": [[100.0, 100.0], [200.0, 100.0], [200.0, 200.0], [100.0, 200.0]],
+        "owner": 0,
+        "armies": 5,
+        "selected": false
+    },
+    {
+        "name": "South America",
+        "vertices": [[300.0, 300.0], [400.0, 300.0], [400.0, 400.0], [300.0, 400.0]],
+        "owner": 1,
+        "armies": 3,
+        "selected": false
+    }
+]
