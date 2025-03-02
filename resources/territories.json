@@ -1,16 +1,122 @@
 [
     {
-        "name": "North America",
-        "vertices": [[100.0, 100.0], [200.0, 100.0], [200.0, 200.0], [100.0, 200.0]],
+        "name": "Alaska",
+        "vertices": [[50, 50], [100, 50], [100, 100], [50, 100]],
         "owner": 0,
         "armies": 5,
-        "selected": false
+        "selected": false,
+        "adjacent": ["Northwest Territory", "Alberta"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 3,
+        "coordinates": [75, 75]
     },
     {
-        "name": "South America",
-        "vertices": [[300.0, 300.0], [400.0, 300.0], [400.0, 400.0], [300.0, 400.0]],
+        "name": "Northwest Territory",
+        "vertices": [[120, 50], [170, 50], [170, 100], [120, 100]],
+        "owner": 0,
+        "armies": 3,
+        "selected": false,
+        "adjacent": ["Alaska", "Alberta", "Ontario", "Greenland"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 4,
+        "coordinates": [145, 75]
+    },
+    {
+        "name": "Alberta",
+        "vertices": [[50, 120], [100, 120], [100, 170], [50, 170]],
+        "owner": 0,
+        "armies": 2,
+        "selected": false,
+        "adjacent": ["Alaska", "Northwest Territory", "Ontario", "Western US"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 3,
+        "coordinates": [75, 145]
+    },
+    {
+        "name": "Ontario",
+        "vertices": [[120, 120], [170, 120], [170, 170], [120, 170]],
+        "owner": 1,
+        "armies": 4,
+        "selected": false,
+        "adjacent": ["Northwest Territory", "Alberta", "Western US", "Eastern US", "Greenland"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 5,
+        "coordinates": [145, 145]
+    },
+    {
+        "name": "Greenland",
+        "vertices": [[200, 50], [250, 50], [250, 100], [200, 100]],
         "owner": 1,
         "armies": 3,
-        "selected": false
+        "selected": false,
+        "adjacent": ["Northwest Territory", "Ontario", "Eastern US", "Iceland"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 6,
+        "coordinates": [225, 75]
+    },
+    {
+        "name": "Western US",
+        "vertices": [[50, 190], [100, 190], [100, 240], [50, 240]],
+        "owner": 0,
+        "armies": 3,
+        "selected": false,
+        "adjacent": ["Alberta", "Ontario", "Eastern US", "Mexico"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 3,
+        "coordinates": [75, 215]
+    },
+    {
+        "name": "Eastern US",
+        "vertices": [[120, 190], [170, 190], [170, 240], [120, 240]],
+        "owner": 1,
+        "armies": 4,
+        "selected": false,
+        "adjacent": ["Ontario", "Western US", "Greenland", "Mexico"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 4,
+        "coordinates": [145, 215]
+    },
+    {
+        "name": "Mexico",
+        "vertices": [[50, 260], [100, 260], [100, 310], [50, 310]],
+        "owner": 0,
+        "armies": 2,
+        "selected": false,
+        "adjacent": ["Western US", "Eastern US", "Central America"],
+        "continent": "North America",
+        "bonus": 2,
+        "strategic_value": 3,
+        "coordinates": [75, 285]
+    },
+    {
+        "name": "Iceland",
+        "vertices": [[280, 50], [330, 50], [330, 100], [280, 100]],
+        "owner": 1,
+        "armies": 2,
+        "selected": false,
+        "adjacent": ["Greenland", "Scandinavia"],
+        "continent": "Europe",
+        "bonus": 5,
+        "strategic_value": 4,
+        "coordinates": [305, 75]
+    },
+    {
+        "name": "Scandinavia",
+        "vertices": [[360, 50], [410, 50], [410, 100], [360, 100]],
+        "owner": 1,
+        "armies": 3,
+        "selected": false,
+        "adjacent": ["Iceland", "Great Britain", "Russia"],
+        "continent": "Europe",
+        "bonus": 5,
+        "strategic_value": 5,
+        "coordinates": [385, 75]
     }
 ]
